@@ -5,20 +5,20 @@
 class MakeItPublic < Formula
   desc "make-it-public binary"
   homepage "https://gihub.com/ksysoev/make-it-public"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ksysoev/make-it-public/releases/download/v0.6.0/make-it-public_Darwin_x86_64.tar.gz"
-      sha256 "c4b8c2af424f782b8e1b54f69f3396fcbf739b1f0f6cf92e5e39ed3d6b39c111"
+      url "https://github.com/ksysoev/make-it-public/releases/download/v0.7.0/make-it-public_Darwin_x86_64.tar.gz"
+      sha256 "737dfe7003652e2c0832f022ad4de8ebbe12eb14aad98303b6a2e7c611864b41"
 
       def install
         bin.install 'mit'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ksysoev/make-it-public/releases/download/v0.6.0/make-it-public_Darwin_arm64.tar.gz"
-      sha256 "c1e7c99128b5ee15a1238a3f073b91bc9f60f5b6ddc9ca22255a7dbd08dcca10"
+      url "https://github.com/ksysoev/make-it-public/releases/download/v0.7.0/make-it-public_Darwin_arm64.tar.gz"
+      sha256 "92544ad7c8c77be06748a1090e211017232969bb14e5db3752edc355f2c85449"
 
       def install
         bin.install 'mit'
@@ -28,15 +28,15 @@ class MakeItPublic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksysoev/make-it-public/releases/download/v0.6.0/make-it-public_Linux_x86_64.tar.gz"
-      sha256 "f6e43b0a29d24863f038485c7afce129f0b64b2c0647cebbc03f9c6dec786bba"
+      url "https://github.com/ksysoev/make-it-public/releases/download/v0.7.0/make-it-public_Linux_x86_64.tar.gz"
+      sha256 "23db87ce472c59e6b89c4bdb71615b97bddae43499b51c5621c317a3128f4fea"
       def install
         bin.install 'mit'
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksysoev/make-it-public/releases/download/v0.6.0/make-it-public_Linux_arm64.tar.gz"
-      sha256 "bb61dfa9cbbfbf2a17ae19ffa215070a768f89cc66d487521870dfff51eea039"
+      url "https://github.com/ksysoev/make-it-public/releases/download/v0.7.0/make-it-public_Linux_arm64.tar.gz"
+      sha256 "3a5b7cea170fc5738efab4ef291795da755b250d59b2b4f016ff2bbf8544dbb7"
       def install
         bin.install 'mit'
       end
